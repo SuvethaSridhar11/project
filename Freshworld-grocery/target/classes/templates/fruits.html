@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping cart </title>
+    <link href="../static/css/style.css" th:href="@{css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<h1><i class=" fa fa-shopping-cart"></i></h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section class="product">
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+
+                <img src="../static/images/onions1.jpg"  class="product-thumb" alt="" th:src="@{images/onions1.jpg}"/>
+                <span></span>
+
+                <button class="card-btn">Add-cart</button>
+
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+
+                <img src="../static/images/onions1.jpg"  class="product-thumb" alt="" th:src="@{images/onions1.jpg}"/>
+
+                <span></span>
+                <button class="card-btn">Add-cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+
+                <img src="../static/images/onions1.jpg"  class="product-thumb" alt="" th:src="@{images/onions1.jpg}"/>
+
+
+                <span></span>
+                <button class="card-btn">Add-cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+
+                <img src="../static/images/tomato.jpeg"  class="product-thumb" alt="" th:src="@{images/tomato.jpeg}"/>
+
+                <span></span>
+                <button class="card-btn">Add-cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="select">
+<!--    <button type="button" onclick="pageRedirect()">Go to Tutorial Republic</button>
+  &lt;!&ndash;  <button id="myButton" class="float-left submit-button" >BUY-NOW</button>&ndash;&gt;
+  &lt;!&ndash;  <script type="text/javascript">document.getElementById("myButton").onclick = function pageRedirect() {
+        location.th:href = "display";
+    };
+</script>&ndash;&gt;
+    <script>
+    function pageRedirect()
+    {
+    window.location.href="display";
+     }
+
+</script>
+    <input type="button" class="remove-item" value="X" />
+    <script>
+    $(".remove").click(function(e) { pid = $(this).siblings("input:hidden").attr("value");
+    </script>-->
+</div>
+
+</body>
+</html>
+<!--
+<script type="text/javascript" src="js/main.js"></script>-->
+<script>
+var noti = document.querySelector('h1');
+var select = document.querySelector('.select');
+	var button = document.getElementsByTagName('button');
+	for(var but of button){
+		but.addEventListener('click', (e)=>{
+			var add = Number(noti.getAttribute('data-count') || 0);
+			noti.setAttribute('data-count', add +1);
+			noti.classList.add('zero')
+
+			// image --animation to cart ---//
+			var image = e.target.parentNode.querySelector('img');
+			var span = e.target.parentNode.querySelector('span');
+			var s_image = image.cloneNode(false);
+			span.appendChild(s_image);
+			span.classList.add("active");
+			setTimeout(()=>{
+				span.classList.remove("active");
+				span.removeChild(s_image);
+			}, 500);
+
+
+			// copy and paste //
+			var parent = e.target.parentNode;
+			var clone = parent.cloneNode(true);
+			select.appendChild(clone);
+			clone.lastElementChild.innerText = "Buy-now";
+
+			if (clone) {
+				noti.onclick = ()=>{
+					select.classList.toggle('display');
+				}
+			}
+		});
+	}
+
+</script>

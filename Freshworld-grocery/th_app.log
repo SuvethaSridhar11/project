@@ -1,0 +1,27 @@
+2022-01-10 10:50:25.667  INFO 21464 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Starting FreshworldGroceryApplication using Java 17.0.1 on THBSSTRLPT-148 with PID 21464 (C:\Users\suvetha_sridhar\IdeaProjects\Freshworld-grocery\target\classes started by suvetha_sridhar in C:\Users\suvetha_sridhar\IdeaProjects\Freshworld-grocery)
+2022-01-10 10:50:25.675  INFO 21464 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : No active profile set, falling back to default profiles: default
+2022-01-10 10:50:25.739  INFO 21464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-10 10:50:25.740  INFO 21464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-10 10:50:26.450  INFO 21464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-10 10:50:26.515  INFO 21464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2022-01-10 10:50:27.292  INFO 21464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-01-10 10:50:27.303  INFO 21464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-10 10:50:27.304  INFO 21464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-01-10 10:50:27.419  INFO 21464 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-10 10:50:27.419  INFO 21464 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1678 ms
+2022-01-10 10:50:27.650  INFO 21464 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-10 10:50:27.725  INFO 21464 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-01-10 10:50:27.878  INFO 21464 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-10 10:50:27.982  INFO 21464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-10 10:50:28.328  INFO 21464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-10 10:50:28.366  INFO 21464 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-01-10 10:50:28.986  INFO 21464 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-10 10:50:28.992  INFO 21464 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-10 10:50:29.387  WARN 21464 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-10 10:50:29.813  INFO 21464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-01-10 10:50:29.861  INFO 21464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-01-10 10:50:29.874  INFO 21464 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : Started FreshworldGroceryApplication in 4.642 seconds (JVM running for 5.417)
+2022-01-10 10:50:29.879  INFO 21464 --- [restartedMain] c.t.F.FreshworldGroceryApplication       : End
+2022-01-10 10:50:45.409  INFO 21464 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-10 10:50:45.410  INFO 21464 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-10 10:50:45.411  INFO 21464 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
